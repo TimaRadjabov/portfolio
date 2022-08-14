@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/slick.css" />
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/animate.css" />
 
     <title>Portfolio</title>
   </head>
@@ -43,9 +44,15 @@
       </header>
       <div class="popup">
         <ul id="menu">
-          <li class="header__item"><a class="header__link" href="#first">О себе</a></li>
-          <li class="header__item"><a class="header__link" href="#second">Портфолио</a></li>
-          <li class="header__item"><a class="header__link" href="#fourth">Контакты</a></li>
+          <li class="header__item">
+            <a class="header__link" href="#first">О себе</a>
+          </li>
+          <li class="header__item">
+            <a class="header__link" href="#second">Портфолио</a>
+          </li>
+          <li class="header__item">
+            <a class="header__link" href="#fourth">Контакты</a>
+          </li>
         </ul>
       </div>
       <div class="content__page">
@@ -53,20 +60,18 @@
           <div class="container">
             <div class="main__body">
               <div class="main__about">
-                <h1 class="main__title title">Темур Раджабов</h1>
-                <p class="main__descr">
+                <h1 class="main__title title wow fadeInDown">Темур Раджабов</h1>
+                <p class="main__descr wow fadeInLeft" data-wow-duration="2s">
                   Привет! Меня зовут Темур, и я являюсь веб-разработчиком. Имею
-                  небольшой опыт в командной разработки, живу, учусь и
-                  развиваюсь
+                  опыт как в командной разработки так и фрилансера.
                 </p>
-                <p class="main__descr">
+                <p class="main__descr wow fadeInLeft" data-wow-duration="2.5s">
                   На сегодняшний день имею два высших образования, по
-                  направлениям "управление качеством" и "инноватика". Довольно
-                  быстро осознал, что нужно что-то менять в жизни и найти работу
-                  по душе. Программирование, пожалуй единственная работа, где я
-                  теряюсь во времени и не наблюдаю за ним.
+                  направлениям "управление качеством" и "инноватика". Пишу
+                  научные статьи и публикую в международных журналах, таких как
+                  Скопус и ВАК.
                 </p>
-                <p class="main__descr">
+                <p class="main__descr wow fadeInLeft" data-wow-duration="3s">
                   Путь становления айти специалистом начинался с
                   самостоятельного изучения материалов. Около полугода я изучал
                   фронтенд разработку по бесплатным курсам. После попытал свою
@@ -75,21 +80,21 @@
                   компании, имея наставника, полноценную команду разработчиков и
                   проектного менеджера. Наши пути разошлись, когда ухудшились
                   политические взаимоотношения европейских стран с Россией.
-                  Санкции коснулись меня, непосредственно!
                 </p>
-                <p class="main__descr">
-                  После месяца скитаний поиска своего рабочего поприща, я
-                  устроился в компанию "Франчайзер" ведущим верстальщиком. Вот
-                  уже второй месяц я благополучно занимаюсь любимым делом.
+                <p class="main__descr wow fadeInLeft" data-wow-duration="3.5s">
+                  На данный момент являюсь фрилансером. Сотрудничаю с компанией
+                  "Франчайзер"
                 </p>
               </div>
-              <div class="main__img">
+              <div class="main__img wow fadeInRight">
                 <img
                   src="./img/main/photo.jpg"
                   alt="photo"
                   class="main__photo"
                 />
-                <button class="main__btn">Скачать резюме</button>
+                <a href="data:./резюме.pdf" download="" class="main__btn"
+                  >Скачать резюме</a
+                >
               </div>
             </div>
           </div>
@@ -97,11 +102,11 @@
         <section class="portfolio" id="second">
           <div class="container">
             <div class="portfolio__body">
-              <h2 class="portfolio__title title">
+              <h2 class="portfolio__title title wow fadeInDown">
                 Некоторые из моих разработок
               </h2>
               <div class="portfolio__slider">
-                <div class="slider__item div1">
+                <div class="slider__item div1 wow fadeInLeft" data-wow-duration="2.1s">
                   <a
                     href="https://timaradjabov.github.io/Nega/"
                     class="slider__link"
@@ -114,7 +119,7 @@
                     </div>
                   </a>
                 </div>
-                <div class="slider__item div2">
+                <div class="slider__item div2 wow fadeInRight" data-wow-duration="2.1s">
                   <a
                     href="https://timaradjabov.github.io/MaxDar/"
                     class="slider__link"
@@ -123,11 +128,13 @@
                     <img src="./img/portfolio/2.jpg" alt="work" />
                     <div class="effect-to-top">
                       <h3 class="image__title">Max Dar</h3>
-                      <p class="image__text"> Франшиза шумоизоляционной компании</p>
+                      <p class="image__text">
+                        Франшиза шумоизоляционной компании
+                      </p>
                     </div>
                   </a>
                 </div>
-                <div class="slider__item div3">
+                <div class="slider__item div3 wow fadeInLeft" data-wow-duration="2.1s">
                   <a
                     href="https://timaradjabov.github.io/Gorod-A/"
                     class="slider__link"
@@ -136,11 +143,11 @@
                     <img src="./img/portfolio/3.jpg" alt="work" />
                     <div class="effect-to-top">
                       <h3 class="image__title">Gorod-A</h3>
-                      <p class="image__text"> Франшиза музыкальной студии</p>
+                      <p class="image__text">Франшиза музыкальной студии</p>
                     </div>
                   </a>
                 </div>
-                <div class="slider__item div4">
+                <div class="slider__item div4 wow fadeInRight" data-wow-duration="2.1s">
                   <a
                     href="https://timaradjabov.github.io/newYagoda/"
                     class="slider__link"
@@ -149,11 +156,13 @@
                     <img src="./img/portfolio/4.jpg" alt="work" />
                     <div class="effect-to-top">
                       <h3 class="image__title">Yagoda</h3>
-                      <p class="image__text"> Yagoda – Омоложение без уколов и скальпеля</p>
+                      <p class="image__text">
+                        Yagoda – Омоложение без уколов и скальпеля
+                      </p>
                     </div>
                   </a>
                 </div>
-                <div class="slider__item div5">
+                <div class="slider__item div5 wow fadeInLeft" data-wow-duration="2.1s">
                   <a
                     href="https://timaradjabov.github.io/Skinlav/"
                     class="slider__link"
@@ -162,11 +171,13 @@
                     <img src="./img/portfolio/5.jpg" alt="work" />
                     <div class="effect-to-top">
                       <h3 class="image__title">Skinlav</h3>
-                      <p class="image__text">Инновационный формат beauty-бизнеса</p>
+                      <p class="image__text">
+                        Инновационный формат beauty-бизнеса
+                      </p>
                     </div>
                   </a>
                 </div>
-                <div class="slider__item div6">
+                <div class="slider__item div6 wow fadeInRight" data-wow-duration="2.1s">
                   <a
                     href="https://github.com/TimaRadjabov?tab=repositories"
                     class="slider__link"
@@ -175,67 +186,71 @@
                     <img src="./img/portfolio/6.jpg" alt="work" />
                     <div class="effect-to-top">
                       <h3 class="image__title">GitHub</h3>
-                      <p class="image__text">Код проектов можно посматреть в GitHub</p>
+                      <p class="image__text">
+                        Код проектов можно посматреть в GitHub
+                      </p>
                     </div>
                   </a>
                 </div>
               </div>
               <div class="skills__block">
-                <h3 class="portfolio__skills">Развиваюсь с каждым днем</h3>
-                <div class="skill__item">
+                <h3 class="portfolio__skills wow fadeInDown">Развиваюсь с каждым днем</h3>
+                <div class="skill__item wow fadeInUp">
                   <h4 class="skill__title">HTML5</h4>
                   <div class="skill__line"></div>
                 </div>
-                <div class="skill__item">
+                <div class="skill__item wow fadeInUp">
                   <h4 class="skill__title">CSS3</h4>
                   <div class="skill__line second"></div>
                 </div>
-                <div class="skill__item">
+                <div class="skill__item wow fadeInUp">
                   <h4 class="skill__title">JavaScript</h4>
                   <div class="skill__line third"></div>
                 </div>
-                <div class="skill__item">
+                <div class="skill__item wow fadeInUp">
                   <h4 class="skill__title">jquery</h4>
                   <div class="skill__line fourth"></div>
                 </div>
-                <div class="skill__item">
+                <div class="skill__item wow fadeInUp">
                   <h4 class="skill__title">react-redux</h4>
                   <div class="skill__line fifth"></div>
                 </div>
-                <div class="skill__item">
+                <div class="skill__item wow fadeInUp">
                   <h4 class="skill__title">typescript</h4>
                   <div class="skill__line sixth"></div>
                 </div>
-                <div class="skill__item">
+                <div class="skill__item wow fadeInUp">
                   <h4 class="skill__title">php</h4>
                   <div class="skill__line seventh"></div>
                 </div>
               </div>
-              <h3 class="technologies__title">Технологии, которыми я влядею и использую</h3>
-              <div class="technologies__block">
+              <h3 class="technologies__title wow fadeInDown">
+                Технологии, которыми я влядею и использую
+              </h3>
+              <div class="technologies__block wow fadeInUp">
                 <div class="technologies__item">
-                  <img src="./img/portfolio/figma.png" alt="figma">
-                </div>  
-                <div class="technologies__item">
-                  <img src="./img/portfolio/js.png" alt="js">
+                  <img src="./img/portfolio/figma.png" alt="figma" />
                 </div>
                 <div class="technologies__item">
-                  <img src="./img/portfolio/sass.png" alt="sass">
+                  <img src="./img/portfolio/js.png" alt="js" />
                 </div>
                 <div class="technologies__item">
-                  <img src="./img/portfolio/git.png" alt="git">
+                  <img src="./img/portfolio/sass.png" alt="sass" />
                 </div>
                 <div class="technologies__item">
-                  <img src="./img/portfolio/vs.png" alt="vs">
+                  <img src="./img/portfolio/git.png" alt="git" />
                 </div>
                 <div class="technologies__item">
-                  <img src="./img/portfolio/react.png" alt="react">
+                  <img src="./img/portfolio/vs.png" alt="vs" />
                 </div>
                 <div class="technologies__item">
-                  <img src="./img/portfolio/redux.png" alt="redux">
+                  <img src="./img/portfolio/react.png" alt="react" />
                 </div>
                 <div class="technologies__item">
-                  <img src="./img/portfolio/type.png" alt="type">
+                  <img src="./img/portfolio/redux.png" alt="redux" />
+                </div>
+                <div class="technologies__item">
+                  <img src="./img/portfolio/type.png" alt="type" />
                 </div>
               </div>
             </div>
@@ -248,35 +263,56 @@
             <h3 class="footer__title">Для связи со мной</h3>
             <div class="footer__main">
               <div class="footer__logo">
-                <a href="#first"><img src="./img/header/logo.png" alt="logo"></a>
+                <a href="#first"
+                  ><img src="./img/header/logo.png" alt="logo"
+                /></a>
               </div>
               <div class="footer__socials">
-                <a href="https://vk.com/id267783054" class="footer__link" target="_blank">
-                  <img src="./img/footer/vk.png" alt="vk">
+                <a
+                  href="https://vk.com/id267783054"
+                  class="footer__link"
+                  target="_blank"
+                >
+                  <img src="./img/footer/vk.png" alt="vk" />
                 </a>
-                <a href="https://t.me/timarustamovich" class="footer__link" target="_blank">
-                  <img src="./img/footer/tg.png" alt="tg">
+                <a
+                  href="https://t.me/timarustamovich"
+                  class="footer__link"
+                  target="_blank"
+                >
+                  <img src="./img/footer/tg.png" alt="tg" />
                 </a>
-                <a href="https://wa.me/79600378449" class="footer__link" target="_blank">
-                  <img src="./img/footer/what.png" alt="whats">
+                <a
+                  href="https://wa.me/79600378449"
+                  class="footer__link"
+                  target="_blank"
+                >
+                  <img src="./img/footer/what.png" alt="whats" />
                 </a>
               </div>
             </div>
             <div class="footer__phone">
-              <img src="./img/footer/phone.png" alt="phone" class="footer__phone-img">
+              <img
+                src="./img/footer/phone.png"
+                alt="phone"
+                class="footer__phone-img"
+              />
               <a class="call__number" href="tel:+79600378449"
-              >+7 (960) 037-84-49</a
-            >
+                >+7 (960) 037-84-49</a
+              >
             </div>
           </div>
         </div>
       </footer>
     </div>
- 
 
     <script src="js/jquery.min.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/swipper.js"></script>
     <script src="js/burger.js"></script>
+    <script src="./js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
   </body>
 </html>

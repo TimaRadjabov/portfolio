@@ -21,6 +21,7 @@ items.forEach(item => {
 
    item.addEventListener('click', ()=>{
       popup.classList.remove('open');
-      body.classList.remove('noscroll')
+      body.classList.remove('noscroll');
+      btn.classList.remove('active');
    })
 })
